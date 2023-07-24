@@ -1,0 +1,750 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.container {
+  max-width: 1130px !important;
+}
+
+/* _________________________________________________________________________ Root */
+:root {
+  --main_color: #000000;
+  --section_padding: 5rem;
+}
+
+/* _______________________________________________________________________ End Root */
+
+/* _________________________________________________________________________ scroll */
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #fff;
+  border-left: 2px solid #eee;
+  box-shadow: 0px 0px 21px 0px #0003 inset;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #000;
+  box-shadow: 0px 0px 10px 0px #eeeeee8c inset;
+  border-radius: 100vh;
+}
+/* _____________________________________________________________________ End scroll */
+
+/* ___________________________________________________________________________ Home */
+.navbar {
+  padding: 10px 0;
+  background-color: #000;
+  z-index: 20000000000000;
+}
+
+.navbar .navbar-brand {
+  font-weight: 700 !important;
+}
+
+.navbar .navbar-nav .nav-item a {
+  position: relative;
+  margin-left: 15px;
+  text-transform: capitalize;
+}
+
+.navbar .navbar-nav .nav-item a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition:all .3s;
+  height: 2px;
+  width: 0;
+  background-color:#fff;
+}
+.navbar .navbar-nav .nav-item .active::after{
+  width: 100%;
+}
+#home {
+  min-height: 100dvh;
+  background: linear-gradient(rgba(0, 0, 0, 0.631), rgba(0, 0, 0, 0.631)),
+    url(../image/bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: var(--section_padding) 0;
+}
+
+#home .page-caption h2 {
+  font-size: 50px;
+  font-weight: 800;
+}
+#home .page-caption p {
+  font-size: 60px;
+  font-weight: 100;
+}
+
+#home .page-caption .home-icon {
+  width: 250px;
+}
+#home .page-caption .home-icon span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+  background-color: rgba(0, 0, 0, 0.31);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+#home .page-caption p::after {
+  font-weight: 500;
+  content: " |";
+  animation: typing 6s linear infinite;
+}
+@keyframes typing {
+  0% {
+    content: " |";
+  }
+  1.2820512820512822% {
+    content: " L |";
+  }
+  2.5641025641025643% {
+    content: " La |";
+  }
+  3.8461538461538467% {
+    content: " Lar |";
+  }
+  5.128205128205129% {
+    content: " Larr |";
+  }
+  6.410256410256411% {
+    content: " Larry |";
+  }
+  7.692307692307693% {
+    content: " Larry |";
+  }
+  8.974358974358974% {
+    content: " Larry D |";
+  }
+  10.256410256410257% {
+    content: " Larry Da |";
+  }
+  11.53846153846154% {
+    content: " Larry Dan |";
+  }
+  12.820512820512821% {
+    content: " Larry Dana |";
+  }
+  14.102564102564104% {
+    content: " Larry Danai |";
+  }
+  15.384615384615387% {
+    content: " Larry Danail |";
+  }
+  16.666666666666668% {
+    content: " Larry Danails |";
+  }
+  15.384615384615387% {
+    content: " Larry Danails |";
+  }
+  16.666666666666668% {
+    content: " Larry Danail |";
+  }
+  17.94871794871795% {
+    content: " Larry Danai |";
+  }
+  19.230769230769234% {
+    content: " Larry Dana |";
+  }
+  20.512820512820515% {
+    content: " Larry Dan |";
+  }
+  21.794871794871796% {
+    content: " Larry Da |";
+  }
+  23.07692307692308% {
+    content: " Larry D |";
+  }
+  24.35897435897436% {
+    content: " Larry |";
+  }
+  25.641025641025642% {
+    content: " Larry |";
+  }
+  26.923076923076927% {
+    content: " Larr |";
+  }
+  28.205128205128208% {
+    content: " Lar |";
+  }
+  29.48717948717949% {
+    content: " La |";
+  }
+  30.76923076923077% {
+    content: " L |";
+  }
+  33.333333333333336% {
+    content: " |";
+  }
+  35.18518518518519% {
+    content: " D |";
+  }
+  37.03703703703704% {
+    content: " De |";
+  }
+  38.88888888888889% {
+    content: " Dev |";
+  }
+  40.74074074074075% {
+    content: " Deve |";
+  }
+  42.592592592592595% {
+    content: " Devel |";
+  }
+  44.44444444444445% {
+    content: " Develo |";
+  }
+  46.296296296296305% {
+    content: " Develop |";
+  }
+  48.14814814814815% {
+    content: " Develope |";
+  }
+  50% {
+    content: " Developer |";
+  }
+  48.14814814814815% {
+    content: " Developer |";
+  }
+  50% {
+    content: " Develope |";
+  }
+  51.851851851851855% {
+    content: " Develop |";
+  }
+  53.70370370370371% {
+    content: " Develo |";
+  }
+  55.55555555555556% {
+    content: " Devel |";
+  }
+  57.40740740740741% {
+    content: " Deve |";
+  }
+  59.25925925925927% {
+    content: " Dev |";
+  }
+  61.111111111111114% {
+    content: " De |";
+  }
+  62.96296296296297% {
+    content: " D |";
+  }
+  66.66666666666667% {
+    content: " |";
+  }
+  68.75% {
+    content: " D |";
+  }
+  70.83333333333334% {
+    content: " De |";
+  }
+  72.91666666666667% {
+    content: " Des |";
+  }
+  75% {
+    content: " Desi |";
+  }
+  77.08333333333334% {
+    content: " Desig |";
+  }
+  79.16666666666667% {
+    content: " Design |";
+  }
+  81.25% {
+    content: " Designe |";
+  }
+  83.33333333333334% {
+    content: " Designer |";
+  }
+  81.25% {
+    content: " Designer |";
+  }
+  83.33333333333333% {
+    content: " Designe |";
+  }
+  85.41666666666667% {
+    content: " Design |";
+  }
+  87.5% {
+    content: " Desig |";
+  }
+  89.58333333333333% {
+    content: " Desi |";
+  }
+  91.66666666666667% {
+    content: " Des |";
+  }
+  93.75% {
+    content: " De |";
+  }
+  95.83333333333333% {
+    content: " D |";
+  }
+  100% {
+    content: " |";
+  }
+}
+
+/* _______________________________________________________________________ End Home */
+
+/* _________________________________________________________________________  About */
+#about {
+  min-height: 100dvh;
+  padding: var(--section_padding) 0;
+}
+
+#about .container {
+  padding: var(--section_padding) 0;
+}
+#about .container .left-side .image {
+  width: 410px;
+  height: 500px;
+  background: url(../image/dots.png);
+}
+#about .container .left-side .image img {
+  width: 99%;
+  transform: translate(10%, -10%);
+}
+#about .container .right-side .progress {
+  height: 25px;
+}
+
+#about .container .right-side .progress {
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+}
+#about .container .right-side .progress .progress-bar div {
+  position: relative;
+  background-color: black;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+#about .container .right-side .progress .progress-bar .one,
+#about .container .right-side .progress .progress-bar .two,
+#about .container .right-side .progress .progress-bar .three
+{
+  font-size: 12px;
+}
+#about .container .right-side .progress .progress-bar .one::after {
+  content: "95%";
+  position: absolute;
+  margin-left: 90%;
+}
+
+#about .container .right-side .progress .progress-bar .two::after {
+  content: "80%";
+  position: absolute;
+  margin-left: 90%;
+}
+
+#about .container .right-side .progress .progress-bar .three::after {
+  content: "90%";
+  position: absolute;
+  margin-left: 90%;
+}
+#about .container .right-side .button-one,
+#about .container .right-side .button-two {
+  padding: 7px 28px;
+  transition: all 0.5s;
+}
+
+#about .container .right-side .button-one:hover {
+  background-color: white !important;
+  color: black !important;
+  border: 1px solid black !important;
+}
+#about .container .right-side .button-two {
+  border: 1px solid black !important;
+}
+#about .container .right-side .button-two:hover {
+  background-color: black !important;
+  color: white !important;
+}
+#about .container .right-side .button-two:hover a {
+  color: white;
+}
+/* ______________________________________________________________________ End About */
+
+/* _____________________________________________________________________   Services */
+#services {
+  min-height: 100dvh;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--section_padding) 0;
+}
+
+#services .head,
+#work .head,
+.carousel .head,
+#team .head,
+#contact .head {
+  height: fit-content;
+  position: relative;
+  z-index: 5000;
+}
+#services .head h3,
+#work .head h3,
+.carousel .head h3,
+#team .head h3,
+#contact .head h3 {
+  font-size: 40px;
+  font-weight: 900;
+}
+#services .head::after,
+#work .head::after,
+.carousel .head::after,
+#team .head::after,
+#contact .head::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  left: 0;
+  z-index: -1;
+  bottom: 0;
+  background: url(../image/dots.png);
+}
+#services .container {
+  max-width: 1300px !important;
+  min-height: 600px;
+  display: flex;
+}
+
+#services .card {
+  min-height: 200px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border: none;
+}
+
+#services .card .icon {
+  /* border: 7px solid var(--main_color);s */
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+#services .card:hover .icon {
+  background-color: black;
+}
+
+#services .card:hover .icon i {
+  color: white;
+}
+
+#services .card .icon i {
+  font-size: 20px;
+  color: black;
+  transition: 0.5s;
+}
+/* ___________________________________________________________________ End Services */
+
+/* __________________________________________________________________________ Work */
+#work {
+  min-height: 100dvh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--section_padding) 0;
+}
+/* #work .container {
+  width: 1170px !important;
+} */
+#work .container .col .product-image {
+  width: 350px;
+  max-height: 400px;
+  margin-top: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+#work .container .product-image img {
+  width: 100%;
+}
+#work .container .product-image .layer {
+  position: absolute;
+  opacity: 0;
+  top: 10px;
+  width: 100%;
+  height: 100%;
+  border: 5px solid rgba(0, 0, 0, 0.096);
+  background-color: rgba(255, 255, 255, 0.888);
+  transition: all 0.5s;
+}
+
+#work .container .product-image .layer .layer-icon {
+  width: 100px;
+}
+#work .container .product-image .layer .layer-icon span {
+  border: 1px solid transparent;
+}
+#work .container .product-image .layer .layer-icon span:hover {
+  background-color: white !important;
+  border: 1px solid black;
+}
+#work .container .product-image .layer .layer-icon span:hover i {
+  color: black;
+}
+#work .container .product-image .layer .layer-icon i {
+  font-size: 12px;
+}
+#work .container .col .product-image:hover .layer {
+  opacity: 100%;
+  top: 0;
+}
+#work .container .product-image .layer h6 {
+  transform: translateY(-20px);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  transition: all 0.5s;
+}
+#work .container .col .product-image:hover .layer h6 {
+  transform: translateY(0);
+}
+
+#work .nav .nav-item a {
+  color: black;
+  font-weight: 700;
+  margin: 20px 15px;
+}
+/* ______________________________________________________________________ End Work */
+
+/* _______________________________________________________________________ Slider  */
+
+.carousel {
+  width: 100%;
+  background: #f4f4f4;
+  height: 600px;
+  padding: var(--section_padding) 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.img-container {
+  width: 100px !important;
+  height: 150px;
+  margin: auto;
+}
+
+.carousel-indicators button {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50%;
+  background-color: #0000005c !important;
+}
+
+.carousel .slid-main-header {
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#clients .carousel-inner .slid-worker-info .txt-caption {
+  width: 700px;
+  align-self: center;
+}
+#clients .carousel-inner .slid-worker-info .name-foot {
+  font-size: 12px;
+  font-weight: 800;
+}
+/* ____________________________________________________________________ End Slider */
+
+/* ______________________________________________________________________  Counter */
+.counter-work {
+  width: 100%;
+  background: url(../image/counters-bg.jpg) center/cover fixed no-repeat;
+  box-shadow: inset 0 0 0 1000px #fff;
+  padding: 5.3rem 0;
+}
+
+.counter-work .container {
+  gap: 150px !important;
+}
+
+.counter-card {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter-work .counter-icon i {
+  font-size: 30px;
+}
+
+.counter-work .container {
+  gap: 90px !important;
+}
+.counter-card .counter-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.counter-text p {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.counter-text h3 {
+  font-weight: 900;
+  font-size: 30px;
+}
+
+/* ___________________________________________________________________ End Counter */
+
+/* __________________________________________________________________________ Team */
+#team {
+  background-color: #f4f4f4;
+  padding: var(--section_padding);
+  min-height: 100dvh;
+}
+
+#team .container {
+  padding: var(--section_padding) 0;
+}
+#team .team-img .team-text {
+  min-height: 80px;
+  background-color: #5a5a5a;
+}
+
+#team .team-img img {
+  transition: 0.5s all;
+}
+#team .team-img:hover img {
+  transform: scale(1.2, 1.2);
+}
+
+#team .team-img .team-layer {
+  background-color: rgba(255, 255, 255, 0.895);
+  width: 97%;
+  opacity: 0;
+  /* height: 375px; */
+  transform: rotateY(180deg) scale(0.5, 0.5);
+  inset: 0.3125rem;
+  transition: 1s all;
+}
+
+#team .team-img .team-layer .team-layer-icon span {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border: 1px solid transparent;
+}
+#team .team-img .team-layer .team-layer-icon span i {
+  font-size: 20px;
+  transition: 0.5s all;
+}
+#team .team-img .team-layer .team-layer-icon span:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+#team .col {
+  flex: none;
+}
+#team .col:hover .team-layer {
+  opacity: 1;
+  height: 97%;
+  transform: rotateY(0deg) scale(1, 1);
+}
+/* ______________________________________________________________________ End Team */
+
+/* ______________________________________________________________________  Contact */
+#contact {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--section_padding) 0;
+}
+#contact .container {
+  max-width: 900px !important;
+}
+#contact .container .contact-item .item-one span {
+  padding: 20px;
+  background-color: #f4f4f4;
+  transition: 0.5s all;
+}
+#contact .container .contact-item .item-one span i {
+  font-size: 23px;
+  transform: translateY(3px);
+  color: black;
+}
+#contact .container .contact-item .item-one span:hover {
+  background-color: black;
+}
+#contact .container .contact-item .item-one span:hover i {
+  color: white;
+}
+#contact input,
+#contact textarea {
+  background-color: #f4f4f4;
+}
+#contact input,
+textarea:focus {
+  box-shadow: none !important;
+  outline: none !important;
+  border: none !important;
+}
+#contact button {
+  background-color: black !important;
+  color: white !important;
+  border: 1px solid transparent !important;
+  transition: 0.7s all;
+  padding: 7px 28px;
+}
+#contact button:hover {
+  background-color: white !important;
+  color: black !important;
+  border: 1px solid black !important;
+}
+footer {
+  height: 80px;
+  background-color: #1c1c1c;
+}
+footer div {
+  color: rgba(255, 255, 255, 0.177);
+}
+/* ___________________________________________________________________ End Contact */
